@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, p, a{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 3.3rem;
+    color: white;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+h3{
+    font-weight: 400;
+}
+
+a{
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.cont{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    height: 10vh;
+    align-items: center;
+    background: rgb(0, 0, 0, .85);
+}
+
+.head{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    height: 100%;
+}
+
+.titulo{
+    margin: auto 0;
+}
+
+.menu{
+    margin-left: auto;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li{
+    margin: 0 1rem;
+}
+
+.menu a{
+    color: white;
+}
+
+.menu a:hover{
+    border-bottom: 1px solid white;
+}
+
+.est{
+    height: 90vh;
+}
+
+.comp, .int{
+    height: 100vh;
+}
+
+.est > .cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.comp .diag, .int .diag{
+    height: 80vh;
+}
+
+.est .dg{
+    margin: 0.3rem 0;
+}
+
+.comp .dg, .int .dg{
+    margin: 0.5rem 0;
+}
+
+.sub{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comp .sub{
+    height: 10vh;
+}
+
+.diag{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.dg{
+    border: 1px solid black;
+    width: 32%;
+    height: 25vh;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dg:hover > .tx{
+    opacity: 1;
+    transition: all 300ms;
+}
+
+.dg:hover{
+    transform: scale(1.05);
+}
+
+.dc{
+    background-image: url('./img/clases.png');
+}
+
+.overlay.act1{
+    transition: all 300ms;
+    opacity: 1;
+    visibility: visible;
+}
+
+.do{
+    background-image: url('./img/Object-Diagram-Example-4-750x400@2x.png');
+}
+
+.dpq{
+    background-image: url('./img/paquetes.png');
+}
+
+.des{
+    background-image: url('./img/UML-composite-structure-diagram@2x.png');
+}
+
+.com{
+    background-image: url('./img/componentes.png');
+}
+
+.dp{
+    background-image: url('./img/despliegue-1.png');
+}
+
+.dpf{
+    background-image: url('./img/perfiles.png');
+}
+
+.dcu{
+    background-image: url('./img/UML_diagrama_caso_de_uso.svg');
+}
+
+.dac{
+    background-image: url('./img/Figura-6-Ejemplo-de-Diagrama-de-Actividad.png');
+}
+
+.dme{
+    background-image: url('./img/estados.png');
+}
+
+.di{
+    background-image: url('./img/diagramainteraccion.png');
+}
+
+.ds{
+    background-image: url('./img/secuencia.png');
+}
+
+.dcn{
+    background-image: url('./img/comunicacion.gif');
+}
+
+.dt{
+    background-image: url('./img/Diagrama_de_tiempos.png');
+}
+
+.dgi{
+    background-image: url('./img/global.png');
+}
+
+.tx{
+    display: flex;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    align-items: center;
+    transition: all 300ms;
+    opacity: 0;
+}
+
+.tx h3{
+    color: white;
+}
+
+.nom{
+    margin: auto;
+}
+
+.nom h3, h2{
+    text-align: center;
+}
+
+.overlay{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.content{
+    margin: auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px black;
+    width: 65%;
+    padding: 0 1rem;
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    height: 35vh;
+}
+
+.titcont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+}
+
+.texto{
+    margin: auto;
+    width: 45%;
+}
+
+.img{
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#over1 .img{
+    background-image: url('./img/clases.png');
+}
+
+#over2 .img{
+    background-image: url('./img/Object-Diagram-Example-4-750x400@2x.png');
+}
+
+#over3 .img{
+    background-image: url('./img/paquetes.png');
+}
+
+#over4 .img{
+    background-image: url('./img/UML-composite-structure-diagram@2x.png');
+}
+
+#over5 .img{
+    background-image: url('./img/componentes.png');
+}
+
+#over6 .img{
+    background-image: url('./img/despliegue-1.png');
+}
+
+#over7 .img{
+    background-image: url('./img/perfiles.png');
+}
+
+#over8 .img{
+    background-image: url('./img/UML_diagrama_caso_de_uso.svg');
+}
+
+#over9 .img{
+    background-image: url('./img/Figura-6-Ejemplo-de-Diagrama-de-Actividad.png');
+}
+
+#over10 .img{
+    background-image: url('./img/estados.png');
+}
+
+#over11 .img{
+    background-image: url('./img/diagramainteraccion.png');
+}
+
+#over12 .img{
+    background-image: url('./img/secuencia.png');
+}
+
+#over13 .img{
+    background-image: url('./img/comunicacion.gif');
+}
+
+#over14 .img{
+    background-image: url('./img/Diagrama_de_tiempos.png');
+}
+
+#over15 .img{
+    background-image: url('./img/global.png');
+}
+
+.hid{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+}
+
+.back{
+    position: fixed;
+    bottom: 1.1rem;
+    right: 1.5rem;
+
+}
+
+.back a{
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 2rem;
+}
+
+.back a:hover{
+    color: rgba(0, 0, 0, 0.85);
+}
